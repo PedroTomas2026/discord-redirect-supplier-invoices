@@ -41,6 +41,13 @@
   <script>
     // Tenta abrir a app imediatamente ao carregar a página
     window.location.href = "discord://discord.com/channels/1525088196705390652/1528205305190551552";
+
+    // Tenta fechar esta aba pouco depois — só funciona se a aba
+    // foi aberta por um link/script (ex: a partir do Miro numa nova aba).
+    // Se o browser não permitir, a aba simplesmente fica aberta sem erro.
+    setTimeout(function () {
+      window.close();
+    }, 800);
   </script>
 </head>
 <body>
