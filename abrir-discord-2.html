@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>A abrir Discord...</title>
+  <meta http-equiv="refresh" content="0; url=discord://discord.com/channels/1295388002092060682/1338132408377147456">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #2b2d31;
+      color: #f2f3f5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+    }
+    .card {
+      max-width: 420px;
+      padding: 32px;
+    }
+    h1 {
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+    p {
+      color: #b5bac1;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    a {
+      color: #5865f2;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+  <script>
+    // Tenta abrir a app imediatamente ao carregar a página
+    window.location.href = "discord://discord.com/channels/1295388002092060682/1338132408377147456";
+
+    // Tenta fechar esta aba pouco depois. Os browsers só permitem
+    // window.close() em abas "abertas por script" — este truque
+    // (abrir-se a si própria) por vezes contorna essa restrição no
+    // Chrome, mas não é garantido em todos os browsers/versões.
+    setTimeout(function () {
+      window.open('', '_self');
+      window.close();
+    }, 800);
+  </script>
+</head>
+<body>
+  <div class="card">
+    <h1>A abrir a app do Discord…</h1>
+    <p>Se a app não abrir automaticamente em alguns segundos, clica no link abaixo.</p>
+    <p><a href="discord://discord.com/channels/1295388002092060682/1338132408377147456">Abrir no Discord</a></p>
+  </div>
+</body>
+</html>
